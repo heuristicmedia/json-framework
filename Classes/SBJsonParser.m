@@ -97,4 +97,11 @@
     return nil;
 }
 
+// ADDED TO FIX AN EXCEPTION CAUSED BY A CONFLICT WITH THE FACEBOOK SDK:
+// Stupid, but this at least lets us build...
+
+-(id) errorTrace {
+    return [NSArray arrayWithObjects:@"error1", nil];
+}
+
 @end
